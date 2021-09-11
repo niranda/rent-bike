@@ -1,0 +1,32 @@
+.marked-list {
+  &__item {
+    position: relative;
+
+    &-icon {
+      color: $marker-blue;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 7px;
+    }
+
+    &-text {
+      color: $text-gray;
+      font-family: $main-font;
+      font-size: 1.8rem;
+      line-height: 1.78;
+      margin-left: 36px;
+    }
+  }
+
+  &--first-level {
+    margin-left: 0;
+  }
+
+  &--second-level {
+    margin-left: 50px;
+  }
+
+  &--third-level {
+    margin-left: 100px;
+  }
+}

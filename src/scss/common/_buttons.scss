@@ -1,0 +1,377 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: $btn-ff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+
+  &--lg {
+    font-size: $btn-fz--lg;
+    padding: 14px 40px;
+  }
+
+  &--sm {
+    font-size: $btn-fz--sm;
+    padding: 12px 30px;
+  }
+
+  &--default {
+    background-color: $btn-default-bg;
+    color: $btn-default-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-default-bg-hover;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $btn-default-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-bg-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $btn-default-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-bg-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--g-default {
+    background-color: transparent;
+    border: 2px solid $border-white;
+    color: $btn-default-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-default-bg-hover;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $border-white;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $border-white;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-secondary-bg-hover;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $btn-secondary-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-bg-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $btn-secondary-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-bg-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--g-secondary {
+    background-color: transparent;
+    border: 2px solid $border-green;
+    color: $btn-secondary-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-default-bg-hover;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $border-green;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $border-green;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--primary {
+    background-color: $btn-primary-bg;
+    color: $btn-primary-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-primary-bg-hover;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $btn-primary-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-triangle-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $btn-primary-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: $btn-primary-triangle-hover;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--g-primary {
+    background-color: transparent;
+    border: 2px solid $border-green;
+    color: $btn-text-green;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-default-bg-hover;
+      color: $btn-primary-text-color;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $border-green;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $border-green;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+
+        &:hover::after {
+          border-left-color: transparent;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: $btn-disabled-bg;
+    color: $btn-disabled-text-color;
+    position: relative;
+
+    &:hover {
+      background-color: $btn-disabled-bg;
+      cursor: not-allowed;
+    }
+
+    &--triangle {
+      &--lg {
+        &::after {
+          border: 18px solid transparent;
+          border-left-color: $btn-disabled-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(100%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+      }
+
+      &--sm {
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: $btn-disabled-triangle;
+          bottom: 0;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(103%) translateX(50%) rotate(45deg);
+          width: 0;
+        }
+      }
+    }
+  }
+}

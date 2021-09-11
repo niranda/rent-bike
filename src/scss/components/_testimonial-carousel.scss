@@ -1,0 +1,37 @@
+.testimonial-carousel-section {
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.testimonial-carousel {
+  &__item {
+    &-img {
+      width: 200px;
+    }
+
+    &-text {
+      flex-grow: 1;
+      position: relative;
+      width: 70%;
+    }
+  }
+
+  &-title {
+    margin: 0 auto 110px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &-container {
+    justify-content: center;
+  }
+
+  .slick-slide + .slick-slide {
+    margin-left: 30px;
+  }
+}
+
+.testimonial-home-section {
+  background: url('../images/carousel-bg.jpg') no-repeat center/cover;
+}

@@ -1,0 +1,36 @@
+.ordered-list {
+  counter-reset: num;
+
+  &__item {
+    counter-increment: num;
+
+    &::before {
+      color: $text-gray;
+      content: counter(num) '.';
+      display: inline-block;
+      font-family: $main-font;
+      font-size: 1.8rem;
+      line-height: 1.78;
+    }
+
+    &-text {
+      color: $text-gray;
+      font-family: $main-font;
+      font-size: 1.8rem;
+      line-height: 1.78;
+      margin-left: 20px;
+    }
+  }
+
+  &--first-level {
+    margin-left: 0;
+  }
+
+  &--second-level {
+    margin-left: 50px;
+  }
+
+  &--third-level {
+    margin-left: 100px;
+  }
+}

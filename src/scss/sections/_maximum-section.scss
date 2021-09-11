@@ -1,0 +1,58 @@
+.maximum {
+  &-section {
+    background: url(../images/maximum-bg.jpg) no-repeat center/cover;
+  }
+
+  &__title {
+    color: $title-white-color;
+  }
+
+  &-btn {
+    display: none;
+    margin-top: 45px;
+  }
+
+  &-control {
+    display: flex;
+    margin-top: 68px;
+    position: relative;
+    width: 100%;
+
+    & >.col {
+      padding: 30px;
+    }
+
+    &__item {
+      &-title {
+        color: $text-white;
+        font-family: $secondary-font;
+        font-size: 2.8rem;
+        margin-top: 40px;
+        max-width: 200px;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      &-text {
+        color: #acb6bf;
+        font-family: $main-font;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 32px;
+      }
+
+      & + & {
+        margin-left: 80px;
+      }
+
+      &:hover {
+        background-color: #3c4d5e;
+        margin-bottom: -90px;
+      }
+
+      &:hover .maximum-btn {
+        display: block;
+      }
+    }
+  }
+}

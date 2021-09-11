@@ -1,0 +1,69 @@
+.tags {
+  &__item {
+    &-button {
+      color: $text-blue;
+      font-size: 2rem;
+      height: 46px;
+      position: relative;
+      width: 46px;
+          
+      &:hover {
+        background-color: $bg-blue;
+        border-color: $bg-blue;
+        color: $text-white;
+        transition: all 0.2s ease-in;
+      }
+          
+      &:active {
+        background-color: $bg-dark-blue;
+        border-color: $bg-dark-blue;
+        color: $text-white;
+      }
+    }
+
+    &-lg-container {
+      border: 2px solid $border-dark-gray;
+      padding: 13px 17px;
+
+      &-text {
+        color: $border-dark-gray;
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $text-dark-blue;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &-text + &-text {
+        margin-left: 30px;
+      }
+    }
+
+    &-sm-container {
+      border: 2px solid $border-dark-gray;
+      color: $border-dark-gray;
+      font-family: $secondary-font;
+      font-size: 1.5rem;
+      padding: 10px 9px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $bg-blue;
+        border-color: $bg-blue;
+        color: $text-white;
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &-row + &-row {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,8 @@
+.guide-section {
+  border-bottom: 2px solid #ededed;
+  padding: 65px 0;
+
+  &--bg {
+    background: url('../images/default-bg.jpg') no-repeat center / cover, $blockquote-bg;
+  }
+}

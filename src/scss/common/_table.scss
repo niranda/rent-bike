@@ -1,0 +1,21 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid $bg-white;
+  padding: 20px 23px;
+  font-size: 1.6rem;
+  text-align-last: left;
+}
+
+.table-head {
+    background-color: $bg-gray;
+    color: $text-darkgray;
+}
+
+.table-body tr:nth-child(even) {
+    background-color: $bg-gray;
+}

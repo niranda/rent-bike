@@ -1,0 +1,80 @@
+.header {
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  left: 0;
+  padding-bottom: 25px;
+  padding-top: 16px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  will-change: position;
+  z-index: 99;
+
+  &.is-fixed {
+    background-color: #000;
+    position: fixed;
+    transform: translateY(-100px);
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+    z-index: 999;
+
+    &.show-header {
+      transform: translateY(0);
+    }
+  }
+}
+
+.header-controls {
+  &__item {
+    & + & {
+      margin-left: 45px;
+    }
+  }
+}
+
+.menu-button {
+  height: 18px;
+  width: 22px;
+
+  &__line {
+    background-color: $bg-white;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    width: 100%;
+
+    & + & {
+      margin-top: 3px;
+    }
+  }
+}
+
+.search-button {
+  &__icon {
+    color: $text-white;
+    font-size: 2.5rem;
+  }
+}
+
+.user-control {
+  &__button {
+    &-icon {
+      color: $text-white;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.cart-control {
+  &__button {
+    &-icon {
+      color: $text-white;
+      font-size: 2.5rem;
+
+      &:hover {
+        color: $text-green;
+      }
+    }
+  }
+}

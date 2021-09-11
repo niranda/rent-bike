@@ -1,0 +1,20 @@
+.code {
+    margin-top: 40px;
+  &-text {
+    color: $text-gray;
+    font-size: 1.8rem;
+      
+    &__item {
+      background-color: $bg-lightgray;
+      border: 2px solid $border-gray;
+              
+      &-text {
+        color: $text-darkestgray;
+        font-family: $code-font;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+

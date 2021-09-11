@@ -1,0 +1,86 @@
+.form-control {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    background-color: $font-control-bg-color;
+    border: 2px solid $font-control-border-color;
+    color: $font-control-text-color;
+    font-family: $font-control-ff;
+    font-size: $font-control-fz;
+    height: $font-control-height;
+    line-height: 1;
+    padding-left: 16px;
+    padding-right: 43px;
+    transition: color 0.2s ease-in, border-color 0.2s ease-in, background-color 0.2s ease-in;
+    width: 100%;
+
+    &--textarea {
+      height: auto;
+      min-height: 180px;
+      padding-top: 12px;
+    }
+
+    &::placeholder {
+      color: $font-control-text-color;
+    }
+
+    &:focus {
+      background-color: $font-control-active-bg-color;
+      border-color: $font-control-active-border-color;
+      color: $font-control-active-text-color;
+    }
+
+    &--error {
+      background-color: $font-control-error-bg-color !important;
+      border-color: $font-control-error-border-color !important;
+      color: $font-control-error-text-color !important;
+
+      &::placeholder {
+        color: $font-control-error-text-color !important;
+      }
+    }
+
+    &--success {
+      background-color: $font-control-success-bg-color !important;
+      border-color: $font-control-success-border-color !important;
+      color: $font-control-success-text-color !important;
+
+      &::placeholder {
+        color: $font-control-success-text-color !important;
+      }
+    }
+  }
+
+  &__icon {
+    color: $font-control-text-color;
+    font-size: $font-control-fz;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__error-icon {
+    color: $font-control-error-text-color;
+    display: none;
+  }
+
+  &__success-icon {
+    color: $font-control-success-text-color;
+    display: none;
+  }
+
+  &--error &__icon,
+  &--success &__icon {
+    display: none;
+  }
+
+  &--error &__error-icon {
+    display: block !important;
+  }
+
+  &--success &__success-icon {
+    display: block !important;
+  }
+}

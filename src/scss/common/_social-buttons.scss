@@ -1,0 +1,27 @@
+.social-box {
+  &__item {
+    border: 2px solid $border-dark-gray;
+    color: $border-dark-gray;
+    font-size: 2rem;
+    height: 46px;
+    position: relative;
+    width: 46px;
+
+    &:hover {
+      background-color: $bg-blue;
+      border-color: $bg-blue;
+      color: $text-white;
+      transition: all 0.2s ease-in;
+    }
+
+    &:active {
+      background-color: $bg-dark-blue;
+      border-color: $bg-dark-blue;
+      color: $text-white;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}

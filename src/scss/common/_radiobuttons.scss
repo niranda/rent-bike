@@ -1,0 +1,70 @@
+.radio {
+  &-group + &-group {
+    margin-top: 40px;
+  }
+
+  &-input {
+    display: none;
+
+    &:checked + .radio-container::before {
+      align-items: center;
+      border-color: $radio-input-checked-color;
+      color: $radio-input-checked-color;
+      content: '\f111';
+      display: flex;
+      justify-content: center;
+    }
+
+    &:checked + .radio-container--large::before {
+      font-size: 2.2rem;
+    }
+
+    &:checked + .radio-container--normal::before {
+      font-size: 1.8em;
+    }
+
+    &:checked + .radio-container--small::before {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-container::before {
+    background-color: $radio-input-bg;
+    border: 2px solid $radio-input-border-color;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &-text {
+    color: $radio-text-color;
+    font-family: $main-font;
+    padding-left: 20px;
+
+    &--large {
+      font-size: 1.8rem;
+    }
+
+    &--normal {
+      font-size: 1.6rem;
+    }
+
+    &--small {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-container--large::before {
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  &-container--normal::before {
+    min-height: 30px;
+    min-width: 30px;
+  }
+
+  &-container--small::before {
+    min-height: 20px;
+    min-width: 20px;
+  }
+}

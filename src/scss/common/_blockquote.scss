@@ -1,0 +1,102 @@
+.blockquote {
+  background-color: $blockquote-bg;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  position: absolute;
+  z-index: 99;
+  
+  &-block__item {
+    position: relative;
+  }
+
+  &::after {
+    border: 30px solid transparent;
+    border-left-color: $blockquote-bg;
+    bottom: 0;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(50%);
+    width: 0;
+    z-index: 0;
+  }
+
+  &--arrow-left {
+    &::after {
+      border-bottom-color: $blockquote-bg;
+      border-left-color: transparent;
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+
+  &--w-bg {
+    background: url('../images/blockquote-bg.jpg') no-repeat center / cover, $blockquote-bg;
+    
+    &::after {
+      border-bottom-color: $blockquote-arrow-color;
+    }
+  }
+
+  &--lg {
+    padding: 35px 100px;
+  }
+
+  &--sm {
+    padding: 20px 50px 20px 70px;
+  }
+
+  &__icon {
+    position: absolute;
+
+    &--lg {
+      left: 35px;
+      top: 40px;
+    }
+
+    &--sm {
+      left: 20px;
+      top: 30px;
+    }
+  }
+
+  &__text {
+    color: $blockquote-text-color;
+    font-family: $blockquote-text-ff;
+    font-style: italic;
+    line-height: 1.44;
+
+    &--lg {
+      font-size: $blockquote-text-fz-lg;
+      letter-spacing: 0.5px;
+      margin-bottom: 25px;
+    }
+
+    &--sm {
+      font-size: $blockquote-text-fz-sm;
+      letter-spacing: 0.3px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__author {
+    color: $blockquote-author-color;
+    font-family: $blockquote-author-ff;
+    margin-bottom: 0;
+    margin-top: auto;
+
+    &--lg {
+      font-size: $blockquote-author-fz-lg;
+      letter-spacing: 0.35px;
+      line-height: 2.22;
+    }
+
+    &--sm {
+      font-size: $blockquote-author-fz-sm;
+      letter-spacing: 0.2px;
+      line-height: 1.86;
+    }
+  }
+}

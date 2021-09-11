@@ -1,0 +1,31 @@
+$ach-text-gray: #cbced2;
+
+.achievement {
+  &-section {
+    background: url(../images/achievement-bg.jpg) no-repeat center/cover;
+  }
+
+  &-item {
+    &__counter {
+      color: $text-white;
+      font-family: $secondary-font;
+      font-size: 7rem;
+      margin-top: 60px;
+    }
+
+    &__title {
+      color: $text-white;
+      font-family: $secondary-font;
+      font-size: 2.5rem;
+      margin-bottom: 55px;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      color: $ach-text-gray;
+      font-size: 1.8rem;
+      font-weight: 700px;
+      margin-top: 5px;
+    }
+  }
+}

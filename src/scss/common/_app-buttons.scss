@@ -1,0 +1,63 @@
+.app-btn {
+  &__item {
+    color: $text-white;
+    height: 100%;
+    max-height: 60px;
+    max-width: 247px;
+    position: relative;
+    width: 100%;
+
+    &-logo {
+      display: flex;
+      justify-content: center;
+      width: 24.29%;
+    }
+
+    &--itunes {
+      background: linear-gradient(to right, $app-btn-black 24.29%, $app-btn-gray 24.29%);
+
+      &-text {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        margin: 23px 0 23px 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    &--google {
+      background: linear-gradient(to right, $app-btn-turquoise 24.29%, $app-btn-light-turquoise 24.29%);
+  
+      &-logo {
+        font-size: 3rem;
+        width: 24.29%;
+      }
+  
+      &-text {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        margin: 23px 0 23px 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    &--windows {
+      background: linear-gradient(to right, $app-btn-dark-blue 24.29%, $app-btn-blue 24.29%);
+    
+      &-logo {
+        font-size: 3rem;
+        width: 24.29%;
+      }
+    
+      &-text {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        margin: 23px 0 23px 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 53px;
+  }
+}

@@ -1,0 +1,43 @@
+.rent {
+  &-main-section {
+    background: url(../images/rent-bg.jpg) no-repeat center/cover;
+    margin-top: -125px;
+    padding: 125px;
+  }
+
+  &-title {
+    color: #fff;
+    font-family: $secondary-font;
+    font-size: 6.9rem;
+    line-height: 70px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    &--green {
+      color: $text-green;
+    }
+  }
+
+  &-text {
+    color: #cbced2;
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: 98px;
+    position: relative;
+
+    &::after {
+      background: url(../images/rent-phone.png) no-repeat;
+      content: '';
+      height: 787px;
+      left: 918px;
+      position: absolute;
+      top: -222px;
+      width: 277px;
+    }
+  }
+
+  &-social-section {
+    margin-top: 50px;
+  }
+}
+
